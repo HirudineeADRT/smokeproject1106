@@ -1,0 +1,8 @@
+{
+  "name": "smokeproject1106",
+  "version": "1.0.0",
+  "dependencies": {
+    "googleapis": "29.0.0"
+  },
+  "devDependencies": {}
+}

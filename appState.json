@@ -1,0 +1,220 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "107668f5-115e-48fd-990f-4494ec6defa3": {
+        "id": "107668f5-115e-48fd-990f-4494ec6defa3",
+        "parent": null,
+        "name": "smokeproject1106.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "smokeproject1106.py",
+        "cursor": {
+          "lineNumber": 10,
+          "column": 23
+        },
+        "config": {
+          "runtime": "python37",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 0,
+          "name": "smokeproject1106",
+          "handler": "handler"
+        },
+        "triggers": [
+          {
+            "resourceName": "http-trigger",
+            "config": {}
+          }
+        ]
+      },
+      "b2bab0c0-39c5-4146-8cf4-981ad8cf7761": {
+        "id": "b2bab0c0-39c5-4146-8cf4-981ad8cf7761",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js"
+      },
+      "f063c309-2cd0-4ba5-a177-3b14d7b20a91": {
+        "id": "f063c309-2cd0-4ba5-a177-3b14d7b20a91",
+        "parent": null,
+        "name": "main.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "main.py"
+      },
+      "9150c3e9-93bd-4407-a2f2-81ff98424fa8": {
+        "id": "9150c3e9-93bd-4407-a2f2-81ff98424fa8",
+        "parent": null,
+        "name": "Samplejs.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "Samplejs.js",
+        "cursor": {
+          "lineNumber": 40,
+          "column": 2
+        },
+        "config": {
+          "runtime": "nodejs8",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 0,
+          "name": "Samplejs",
+          "handler": "handler"
+        },
+        "triggers": [
+          {
+            "resourceName": "http-trigger",
+            "config": {}
+          }
+        ]
+      },
+      "075edd1c-f44e-4bf2-8096-44c410b1e301": {
+        "id": "075edd1c-f44e-4bf2-8096-44c410b1e301",
+        "parent": null,
+        "name": "Authorizer.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "Authorizer.js"
+      }
+    },
+    "openFiles": [
+      "107668f5-115e-48fd-990f-4494ec6defa3",
+      "9150c3e9-93bd-4407-a2f2-81ff98424fa8"
+    ],
+    "currentFileId": "107668f5-115e-48fd-990f-4494ec6defa3",
+    "resources": {
+      "http-trigger": {
+        "name": "http-trigger",
+        "type": "http-trigger",
+        "config": {}
+      },
+      "storagehirutest02": {
+        "name": "storagehirutest02",
+        "type": "CloudStorage",
+        "config": {
+          "mode": 1,
+          "bucket": {
+            "name": "hirutest02"
+          }
+        }
+      },
+      "ddbhirutest": {
+        "name": "ddbhirutest",
+        "type": "DynamoDB",
+        "config": {
+          "mode": 1,
+          "table": {
+            "arn": "arn:aws:dynamodb:us-east-1:318300609668:table/hirutest",
+            "name": "hirutest",
+            "partitionKey": "price",
+            "partitionKeyType": "S",
+            "hasSortKey": true,
+            "sortKey": "colour",
+            "sortKeyType": "S",
+            "payPerRequest": true,
+            "mode": 1,
+            "streamArn": "arn:aws:dynamodb:us-east-1:318300609668:table/hirutest/stream/2020-01-02T08:32:20.233"
+          }
+        }
+      },
+      "s3btbucketimages": {
+        "name": "s3btbucketimages",
+        "type": "S3",
+        "config": {
+          "mode": 1,
+          "bucket": {
+            "region": "us-east-1",
+            "name": "btbucket.images"
+          }
+        }
+      }
+    },
+    "customTemplate": {
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "AWS_DEFAULT_REGION",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      },
+      {
+        "lambdaId": "all",
+        "varKey": "AWS_ACCESS_KEY_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      },
+      {
+        "lambdaId": "all",
+        "varKey": "AWS_SECRET_ACCESS_KEY",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      },
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "googleapis": {
+          "name": "googleapis",
+          "language": "nodejs",
+          "version": "29.0.0",
+          "dev": false,
+          "notRemovable": false
+        },
+        "boto3": {
+          "name": "boto3",
+          "language": "python",
+          "version": "1.12.27",
+          "dev": false,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "smokeproject1106",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east1",
+    "platform": "GCP",
+    "language": "python",
+    "platformRegions": {
+      "AWS": "us-west-2"
+    },
+    "lastSave": 1591854684068
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "smokeproject1106",
+      "url": "https://github.com/HirudineeADRT/smokeproject1106"
+    }
+  }
+}
